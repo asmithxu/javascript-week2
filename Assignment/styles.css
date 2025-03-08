@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box; 
+    padding: 0;
+    margin: 0;
+    font: 16px Noto sans, sans-serif;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    color: saddlebrown;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+}
+
+main {
+    background-color:beige;
+    border-top: 1px solid saddlebrown;
+    border-bottom: 1px solid saddlebrown;
+}
+
+    /* Border box will allow the width and height of an element to include padding and border
+    but not the margin. This will make it easier to make the layout consistent. */
+
+/* Styling header and navigation bar */
+nav {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+    /* justify-content: space-between will make sure that the 
+    logo is on the left and the nav links are on the right. 
+    display:flex allows you to use flexbox layout 
+    mode which will make it easier to adjust items in a container */
+
+.logo {
+    font-size: 35px;
+    font-weight: bold;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color:green;
+    margin-left: 1%;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 0 1.5rem;
+    color: saddlebrown;
+}
+
+nav a:hover {
+    color: goldenrod;
+}
+
+    /* rem stands for root em. It is relative to the font-size of the root element.
+    By using rem, we can define the padding in relation to the font-size of the root element which will
+    make it more consistent and responsive. */
+
+/* Styling the homepage */
+
+.banner {
+    background-image: url(coffeedrinks.png);
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+}
+
+#tagLine {
+    height: 100px;
+    display: block;
+    width: 30%;
+    padding-top: 1.5%;
+    padding-left: 5%;
+    line-height: 1.5;
+    color:white;
+
+}
+
+#tagLine > div {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#tagInfo {
+    line-height: 1.5;
+}
+
+/* Styling the about page */
+
+#about > h2, #staffImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about > h2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#staffImage {
+    width: 40%;
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid orange;
+    border-radius: 5px;
+    margin-top:55px;
+    margin-bottom: 55px;
+} 
+
+#aboutText > div {
+    width: 50%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+    padding: 20px;
+    color: saddlebrown;
+}
+
+#aboutText {
+    margin-top: 25px;
+    margin-bottom: 70px;
+}
+
+.aboutHTML {
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+/* Styling the Contact Page*/
+
+#contactHeading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    justify-content: center;
+    align-items: center;
+    margin-left: 33%;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    border: 1ps solid black;
+    border-radius: 10px;
+}
+
+.contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea {
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+button {
+    width: 25%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: goldenrod;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin-left: 37%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.contact-form button {
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: goldenrod;
+    color: white;
+}
+/* Styling the footer */
+
+footer {
+    margin: 20px;
+    display: block;
+    justify-content: center;
+}
+
+footer > p {
+    text-align: center;
+    margin: 10px;
+    color: saddlebrown;
+}
+
+/*Make website responsive*/
+
+@media screen and (max-width: 630px){
+    .logo{
+        font-size: 20px;
+    }
+
+    nav {
+        display: block;
+        align-items: center;
+        justify-items: center;
+    }
+    .navItems {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    nav a {
+        padding: 1rem;
+    }
+
+    #tagLine {
+        width: 75%;
+    }
+
+    .banner {
+        background-position: 15%;
+    }
+
+    #tagInfo {
+        font-size: 14px;
+    }
+
+    }
+
+    @media screen and (width < 1000px){
+        #tagLine {
+            width: 50%;
+        }
+        
+        .banner {
+            background-position: 40%
+        }
+    }

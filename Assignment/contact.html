@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="logo">Java Blast Cafe</h1>
+            <div class="navItems">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h2 id="contactHeading">CONTACT US</h2>
+        <div id="contactUs">
+        <form class="contact-form"  enctype="text/plain" method="post">
+            <p>
+                <label for="Name">Name:</label>
+                <br><input type="text" name="Name" id="name" placeholder="Your Name">
+            </p>
+            <p>
+                <label for="Email">From:</label>
+                <br><input type="email" name="Email" id="email" placeholder="Your Email">
+            </p>
+            <p>
+                <label for="Message">Message:</label>
+                <br><textarea name="Message" id="message"></textarea>
+            </p>
+            <button type="button" id="submitBtn">Submit</button>
+        </form>
+        </div>
+    </main>
+    <footer>
+        <p>Fresh Java and Smoothies since 1987</p>
+        <p id="copyright"> &copy; 2025 Java Blast Cafe</p>
+    </footer> 
+<script src="script.js"></script>
+</body>
+</html>
