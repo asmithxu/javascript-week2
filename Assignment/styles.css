@@ -194,7 +194,8 @@ button {
 
 footer {
     margin: 20px;
-    display: block;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -212,7 +213,8 @@ footer > p {
     }
 
     nav {
-        display: block;
+        display: flex;
+        flex-direction: column;
         align-items: center;
         justify-items: center;
     }
